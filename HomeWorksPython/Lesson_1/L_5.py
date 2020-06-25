@@ -14,6 +14,9 @@ while True:
         break
     print('Ввдено не число! Попробуйте еще раз.')
 
+fin_r = u_vir / u_izd
+fin_p = u_vir - u_izd
+
 if u_vir > u_izd:
     while True:
         kol_sotr = input('Введите количество сотрудников в компании:\n')
@@ -21,8 +24,6 @@ if u_vir > u_izd:
             kol_sotr = int(kol_sotr)
             break
         print('Ввдено не число! Попробуйте еще раз.')
-    fin_r = u_vir / u_izd
-    fin_p = u_vir - u_izd
     dahod_sotr = fin_p / kol_sotr
     print('\t', 'Фирма работает с прибылью, она состовляет = {}\n'.format(fin_p),
           '\t', 'Соотношение = {:>.1f}\n'.format(fin_r),
@@ -30,4 +31,4 @@ if u_vir > u_izd:
 elif u_vir == u_izd:
     print('Фирма работает без убытков и даходов.')
 else:
-    print('Фирма работает в убыток!')
+    print('Фирма работает в убыток! Убаток состовляет:\n',fin_p)
