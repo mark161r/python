@@ -12,5 +12,5 @@ while user_int > 0:
     if user_int % 10 > tmp:
         tmp = user_int % 10
     user_int = user_int // 10
-print(tmp)
+print('Наибольшое число = {}'.format(tmp))
 
