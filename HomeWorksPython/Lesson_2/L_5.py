@@ -1,6 +1,6 @@
 print('Добавление числа в рейтинг и вывод.\n')
 
-user_list = [7, 5, 3, 3, 2]
+rating_list = [7, 5, 3, 3, 2]
 
 while True:
     user_element = input("Введите натуральное число - ")
@@ -9,12 +9,12 @@ while True:
         break
     print('Ввдено не число! Попробуйте еще раз.')
 
-if user_element in user_list:
-    user_list.insert(user_list.index(user_element), user_element)
+if user_element in rating_list_list:
+    rating_list_list.insert(rating_list_list.index(user_element), user_element)
 elif not user_element:
-    print(user_list)
-elif user_list and user_element > max(user_list):
-        user_list.insert(0, user_element)
+    print(rating_list)
+elif rating_list_list and user_element > max(rating_list):
+        rating_list.insert(0, user_element)
 else:
-    user_list.append(user_element)
-print(user_list)
+    rating_list.append(user_element)
+print(rating_list)
